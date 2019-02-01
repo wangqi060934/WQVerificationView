@@ -13,6 +13,12 @@
 		306E988F220456EC009F83B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 306E988E220456EC009F83B4 /* Assets.xcassets */; };
 		306E9892220456EC009F83B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306E9890220456EC009F83B4 /* LaunchScreen.storyboard */; };
 		306E9895220456EC009F83B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 306E9894220456EC009F83B4 /* main.m */; };
+		306E989E22045927009F83B4 /* WQVerificationCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 306E989D22045927009F83B4 /* WQVerificationCodeView.m */; };
+		306E98A2220459CB009F83B4 /* NSString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 306E98A1220459CB009F83B4 /* NSString+Utility.m */; };
+		306E98A5220463FE009F83B4 /* WQVerificationSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 306E98A4220463FE009F83B4 /* WQVerificationSliderView.m */; };
+		306E98AA22046D29009F83B4 /* city.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 306E98A922046D29009F83B4 /* city.jpg */; };
+		D09B20CD67E9FE9D8E4F2560 /* UIImage+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = D09B292B809ECB4B83942DAE /* UIImage+Ext.m */; };
+		D09B2C07FF791CAAB7C34F5C /* UIColor+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = D09B295302043E11F391DB19 /* UIColor+Ext.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,17 @@
 		306E9891220456EC009F83B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		306E9893220456EC009F83B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		306E9894220456EC009F83B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		306E989C22045927009F83B4 /* WQVerificationCodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WQVerificationCodeView.h; sourceTree = "<group>"; };
+		306E989D22045927009F83B4 /* WQVerificationCodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WQVerificationCodeView.m; sourceTree = "<group>"; };
+		306E98A0220459CB009F83B4 /* NSString+Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Utility.h"; sourceTree = "<group>"; };
+		306E98A1220459CB009F83B4 /* NSString+Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utility.m"; sourceTree = "<group>"; };
+		306E98A3220463FE009F83B4 /* WQVerificationSliderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WQVerificationSliderView.h; sourceTree = "<group>"; };
+		306E98A4220463FE009F83B4 /* WQVerificationSliderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WQVerificationSliderView.m; sourceTree = "<group>"; };
+		306E98A922046D29009F83B4 /* city.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = city.jpg; sourceTree = "<group>"; };
+		D09B22D78D120954A2F16280 /* UIColor+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Ext.h"; sourceTree = "<group>"; };
+		D09B23103608B7A5F71AE5BF /* UIImage+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Ext.h"; sourceTree = "<group>"; };
+		D09B292B809ECB4B83942DAE /* UIImage+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Ext.m"; sourceTree = "<group>"; };
+		D09B295302043E11F391DB19 /* UIColor+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Ext.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +75,9 @@
 		306E9884220456EB009F83B4 /* WQVerificationView */ = {
 			isa = PBXGroup;
 			children = (
+				306E98A622046612009F83B4 /* Resource */,
+				306E989F220459AA009F83B4 /* Category */,
+				306E989B22045907009F83B4 /* View */,
 				306E9885220456EB009F83B4 /* AppDelegate.h */,
 				306E9886220456EB009F83B4 /* AppDelegate.m */,
 				306E9888220456EB009F83B4 /* ViewController.h */,
@@ -69,6 +89,38 @@
 				306E9894220456EC009F83B4 /* main.m */,
 			);
 			path = WQVerificationView;
+			sourceTree = "<group>";
+		};
+		306E989B22045907009F83B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				306E989C22045927009F83B4 /* WQVerificationCodeView.h */,
+				306E989D22045927009F83B4 /* WQVerificationCodeView.m */,
+				306E98A3220463FE009F83B4 /* WQVerificationSliderView.h */,
+				306E98A4220463FE009F83B4 /* WQVerificationSliderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		306E989F220459AA009F83B4 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				306E98A0220459CB009F83B4 /* NSString+Utility.h */,
+				306E98A1220459CB009F83B4 /* NSString+Utility.m */,
+				D09B295302043E11F391DB19 /* UIColor+Ext.m */,
+				D09B22D78D120954A2F16280 /* UIColor+Ext.h */,
+				D09B292B809ECB4B83942DAE /* UIImage+Ext.m */,
+				D09B23103608B7A5F71AE5BF /* UIImage+Ext.h */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		306E98A622046612009F83B4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				306E98A922046D29009F83B4 /* city.jpg */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				306E98AA22046D29009F83B4 /* city.jpg in Resources */,
 				306E9892220456EC009F83B4 /* LaunchScreen.storyboard in Resources */,
 				306E988F220456EC009F83B4 /* Assets.xcassets in Resources */,
 				306E988D220456EB009F83B4 /* Main.storyboard in Resources */,
@@ -141,9 +194,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				306E989E22045927009F83B4 /* WQVerificationCodeView.m in Sources */,
 				306E988A220456EB009F83B4 /* ViewController.m in Sources */,
 				306E9895220456EC009F83B4 /* main.m in Sources */,
+				306E98A2220459CB009F83B4 /* NSString+Utility.m in Sources */,
 				306E9887220456EB009F83B4 /* AppDelegate.m in Sources */,
+				D09B2C07FF791CAAB7C34F5C /* UIColor+Ext.m in Sources */,
+				306E98A5220463FE009F83B4 /* WQVerificationSliderView.m in Sources */,
+				D09B20CD67E9FE9D8E4F2560 /* UIImage+Ext.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,15 +343,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WQVerificationView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.wq.WQVerificationView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -301,15 +362,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WQVerificationView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.wq.WQVerificationView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

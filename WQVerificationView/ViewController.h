@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WQVerificationCodeView.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <WQVerificationCodeViewDelegate>
 
 
 @end
