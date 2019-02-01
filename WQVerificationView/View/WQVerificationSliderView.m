@@ -50,7 +50,12 @@
 }
 
 - (void)setUp{
+    //there are 2 point (leading/trailing) need to minus
     self.slider = [[CustomHeightSlider alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width-4, self.bounds.size.height)];
+    CGPoint sliderCenter = self.slider.center;
+    sliderCenter.x+=2;
+    
+    self.slider.center = sliderCenter;
     self.slider.minimumValue=0;
     self.slider.maximumValue=1;
     self.slider.value=0;

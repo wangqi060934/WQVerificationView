@@ -19,10 +19,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 
     [self initRandomCodeViews];
-
+    [self initSlidePuzzleView];
 }
 
 - (void)initRandomCodeViews {
@@ -33,14 +32,16 @@
     self.codeLabel = [[UILabel alloc] initWithFrame:CGRectMake(180, 100, 80, 40)];
     [self.codeLabel setText:[self.codeView getVerficationCodeStr]];
     [self.view addSubview:self.codeLabel];
-
-    self.sliderView = [[WQVerificationSliderView alloc]
-            initWithFrame:CGRectMake(0, 450, [UIScreen mainScreen].bounds.size.width, 45)];
-    [self.view addSubview:self.sliderView];
 }
 
 - (void)onVerificationCodeClicked {
     [self.codeLabel setText:[self.codeView getVerficationCodeStr]];
+}
+
+- (void)initSlidePuzzleView{
+    self.sliderView = [[WQVerificationSliderView alloc]
+                       initWithFrame:CGRectMake(0, 450, [UIScreen mainScreen].bounds.size.width, 45)];
+    [self.view addSubview:self.sliderView];
 }
 
 @end

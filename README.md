@@ -5,7 +5,7 @@ random number verification/slide image puzzle verification
 ![screenshot](./screenshot.gif)
 
 ## Usage
-- random number verification
+- random number verification (**WQVerificationCodeView**)
 
 ```
 WQVerificationCodeView *codeView = [[WQVerificationCodeView alloc] initWithFrame:CGRectMake(50, 100, 80, 40)];
@@ -16,7 +16,7 @@ if([userInput isEqualToString:[self.codeView getVerficationCodeStr]]){
 };
 ```
 
-- slide image puzzle verification
+- slide image puzzle verification (** WQVerificationSliderView**)
 
 ```
 WQVerificationSliderView *sliderView = [[WQVerificationSliderView alloc]
